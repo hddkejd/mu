@@ -1,0 +1,189 @@
+body{
+    background: linear-gradient(to right, beige, white);
+}
+.navbar{
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.373);
+    margin-bottom: auto;
+}
+.navbar ul{
+    float: right;
+    margin-right: 20px;
+}
+.navbar ul li{
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+    line-height: 60px;
+    
+}
+.navbar ul li a{
+    font-size: xx-large;
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+    padding: 6px 13px;
+    text-decoration: none;
+    transition: .3s;
+    position: relative;
+}
+.navbar ul li a:hover{
+    color: rgb(24, 233, 215);
+    cursor: pointer;
+}
+.navbar ul li a::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: #fff;
+    transition:all .3s;
+}
+.navbar ul li a:hover::before{
+    width: 100%;
+    background: rgb(10, 172, 247);
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    
+}
+.row {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+.col {
+    width: 30%;
+    justify-content: end;
+}
+.center {
+    text-align: center;
+    width: 20%;
+}
+h1 {
+    font-size: 36px;
+    color: #3a3a3a;
+    margin: 20px 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    border-color: rgba(93, 191, 181, 0.8);
+    margin-left: 50px;
+}
+.c{
+    margin: 1cm;
+}
+.a{
+    text-align: center;
+}
+.b{
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+}
+.q{
+    margin: 10cm;
+    behavior: inherit;
+}
+h2{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+body,html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+}
+.Section_top{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image: url(image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    animation: change 15s infinite ease-in-out;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+
+}
+.content h1{
+    color: #00b3ff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 60px;
+    letter-spacing: 15px;
+}
+.content h1 span{
+    color: #111;
+}
+.content a{
+    background: #85c1ee;
+    padding: 10px 24px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.content a:hover{
+    background: #1a79d2;
+    color: #fff;
+}
+@keyframes change{
+    0%
+    {
+        background-image: url(Img/Chichen-Itza.jpg);
+    }
+    20%
+    {
+        background-image: url(Img/Christ-the-Redeemer.png);
+    }
+    40%
+    {
+        background-image: url(Img/great-wall-of-china.png);
+    }
+    60%
+    {
+        background-image: url(Img/Machu-Picchu.png);
+    }
+    80%
+    {
+        background-image: url(Img/petra.png);
+    }
+    100%
+    {
+        background-image: url(Img/The-Colosseum.png);
+    }
+}
+.container .row .col img {
+    width: 75%;
+    height: 75%;
+    object-fit: cover;
+    transition: transform 400ms;
+}
+.container .row .col:hover{
+    transform: scale(1.2);
+}
